@@ -3,9 +3,9 @@
 | Nr. | Anforderung |
 |---|---|
 | **ANF-01** | Ein gültiger Eintrag (`name`, `score`, `modus`) muss gespeichert werden. Die Antwort hat den Statuscode `201` und enthält den gespeicherten Eintrag mit den Feldern `name`, `score` und `modus`. |
-| **ANF-02** | Der `name` muss ein Text mit 1 bis 12 Zeichen** sein. |
+| **ANF-02** | Der `name` muss ein Text mit 1 bis 12 Zeichen sein. |
 | **ANF-03** | Der `name` muss ausschliesslich aus den Buchstaben `A–Z`, `a–z` und den Ziffern `0–9` bestehen. Leerzeichen, Sonderzeichen und Umlaute sind nicht erlaubt. |
-| **ANF-04** | Der `score` muss eine ganze Zahl von 0 oder grösser** sein. Kein Text, keine Dezimalzahl und kein Wahrheitswert (`true`/`false`). |
+| **ANF-04** | Der `score` muss eine ganze Zahl von 0 oder grösser sein. Kein Text, keine Dezimalzahl und kein Wahrheitswert (`true`/`false`). |
 | **ANF-05** | Der `modus` muss einer der Werte `classic`, `medium` oder `pro` sein. Gross-/Kleinschreibung spielt keine Rolle. Gespeichert und in der Antwort zurückgegeben wird er in Kleinbuchstaben. |
 | **ANF-06** | Alle drei Felder sind Pflicht. Fehlt eines, wird der Eintrag abgelehnt. |
 | **ANF-07** | Bei ungültiger Eingabe muss die API mit dem Statuscode `422` antworten. Die Antwort enthält im Feld `detail` eine nicht leere Fehlermeldung. Der Eintrag wird nicht gespeichert. |
